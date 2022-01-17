@@ -1,5 +1,4 @@
-
-import Wallpaper from '../images/wallpaper-starwars.jpg'
+import { Container } from "react-bootstrap"
 
 
 
@@ -7,10 +6,10 @@ import Wallpaper from '../images/wallpaper-starwars.jpg'
 const Home = () => {
     return(
         <div>
-            <img src={Wallpaper} alt="star wars credit wallpaper"
-            height="300" 
-            className="container-fluid"/>
-
+            <Container>
+            <h1>Welcome to the Star Wars Fan App </h1>
+            <p>By going to the films page you can see each star wars movie released as well as all the characters starring in the movie</p>
+            </Container>
         </div>
     )
 }

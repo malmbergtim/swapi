@@ -23,7 +23,7 @@ const MovieCard = (movie) => {
         <Modal.Header closeButton>
           <Modal.Title>{movie.title}: Characters</Modal.Title>
         </Modal.Header>
-        <Modal.Body><MovieCharacters show={show}></MovieCharacters></Modal.Body>
+        <Modal.Body><MovieCharacters characters={movie.characters} show={show}></MovieCharacters></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

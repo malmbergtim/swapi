@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 
-const MovieCharacters = (movie, show) => {
+const MovieCharacters = (movie, show, characters) => {
     const [chars, addChars] = useState([])
 
     
@@ -16,7 +16,11 @@ const MovieCharacters = (movie, show) => {
     return(
        
         <>
-            <p>TJENA</p>
+            {chars.map(character => {
+                return(
+                    <p>{character.name}</p>
+                )
+            })}
         </>
     )
 }
