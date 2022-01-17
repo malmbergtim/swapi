@@ -37,7 +37,8 @@ const Films = () => {
             loading ? 
             <DotLoader color={"#292b2c "} loading={loading} css={override} size={150} />
             :
-            film.map((movie) => {
+            film.length > 0 &&  
+          film.sort((a, b) => a.episode_id - b.episode_id).map((movie) => {
                 return (
                   <>
                   <MovieCard
